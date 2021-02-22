@@ -18,14 +18,15 @@ git clone https://github.com/LuckFire/statuspicker-plus
 ```
 
 **For [BetterDiscord](https://betterdiscord.net/):**
-- [Direct Dowload](https://betterdiscord.net/ghdl?id=)
-- [View Source]()
+- [Direct Dowload](https://betterdiscord.net/ghdl?id=3507)
+- [View Source](https://raw.githack.com/Discord-Theme-Addons/statuspicker-plus/master/src/support/StatusPickerPlus.theme.css)
 
 **For Browser / Web:**
 1. Install the Stylus extension for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) / [Opera](https://github.com/openstyles/stylus/wiki/Opera,-Outdated-Stylus).
-2. After installing, head over to [this link]().
+2. After installing, head over to [this link](https://raw.githack.com/Discord-Theme-Addons/statuspicker-plus/master/src/support/StatusPickerPlus.user.css).
 3. Press the "Install Style" button.
 
 # Known Positioning Isse
 If the avatar area appears to be off (shifting the words to the right more than they should be, look at the screenshot for a better explanation), you can fix this yourself by going into `./src/_root.scss` and messing with `--avatar-width` and `--avatar-height`.
+
 ![Issue](./screenshots/issue1.png)
