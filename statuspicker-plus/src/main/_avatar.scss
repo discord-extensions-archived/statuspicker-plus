@@ -1,0 +1,39 @@
+#app-mount {
+    .container-3baos1 {
+        position: relative;
+
+        .avatarWrapper-2yR4wp[aria-expanded="true"] {
+            height: var(--avatar-height);
+            width: var(--avatar-width);
+
+            &::after {
+                content: "";
+                cursor: pointer;
+                position: absolute;
+                background: var(--background-tertiary)  url('https://cdn.discordapp.com/attachments/794019383172399135/813493336270569543/Component_1.svg') center/115% no-repeat;
+                border-radius: 25px;
+                padding: 16px;
+            }
+
+            .avatar-SmRMf2 {
+                z-index: 1003;
+                position: absolute;
+                pointer-events: none;
+                height: 60px !important;
+                width: 60px !important;
+                bottom: 156px;
+                left: 50%;
+                animation: StatusPickerAvatar 350ms ease forwards; 
+
+                foreignObject {
+                    mask: none;
+                    border-radius: 25px;
+                }
+
+                rect {
+                    display: none;
+                }
+            }
+        }
+    }
+}

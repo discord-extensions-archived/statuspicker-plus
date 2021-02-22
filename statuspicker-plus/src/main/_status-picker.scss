@@ -1,0 +1,99 @@
+#app-mount {
+    // Removes The Original Animation
+    .scale-3iLZhb {
+        opacity: 1;
+        transform: none;
+    }
+
+    // Main Code
+    #status-picker {
+        background: radial-gradient(circle at center 45px, var(--avatar-gap-bg) 34px, var(--menu-bg) 0);
+        border-radius: var(--border-radius);
+        box-shadow: 0 0 8px rgb(0, 0, 0, 0.5);
+        margin-bottom: 3px;
+        width: 224px;
+        height: 172px;
+        animation: StatusPicker 350ms ease forwards;
+
+        .status-1fhblQ, .separator-2I32lJ, .description-2L932D {
+            display: none;
+        }
+
+        .scroller-3BxosC {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 94%;
+            bottom: 42px;
+            left: 15px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .item-1tOPte:not(#status-picker-custom-status) {
+                background-color: transparent;
+                padding: 0;
+                margin: 0 10px;
+                width: 25px;
+
+                &#status-picker-online {
+                    --status-color: var(--online);
+                    --status-color-hover: var(--online-hover);
+                    margin-left: -8px;
+                }
+
+                &#status-picker-idle {
+                    --status-color: var(--idle);
+                    --status-color-hover: var(--idle-hover)
+                }
+
+                &#status-picker-dnd {
+                    --status-color: var(--dnd);
+                    --status-color-hover: var(--dnd-hover)
+                }
+
+                &#status-picker-invisible {
+                    --status-color: var(--invisible);
+                    --status-color-hover: var(--invisible-hover);
+                }
+
+                .status-1AY8sU {
+                    background-color: var(--status-color) !important;
+                    transition: all 300ms;
+                }
+                
+                &:hover, &.focused-3afm-j {
+                    .status-1AY8sU {
+                        background-color: var(--status-color-hover) !important;
+                    }
+                }
+
+                .statusItem-33LqPf {
+                    margin-top: -4px;
+
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+
+            #status-picker-custom-status {
+                position: fixed;
+                background-color: var(--custom-status-bg);
+                border-radius: var(--border-radius);
+                margin-top: 40px;
+                margin-left: -29px;
+                width: 216px;
+                transition: all 300ms;
+
+                &:hover, &.focused-3afm-j {
+                    background-color: #5C6FB1;
+                }
+            }
+        }
+    }
+}

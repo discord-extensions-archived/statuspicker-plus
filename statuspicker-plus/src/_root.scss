@@ -1,0 +1,21 @@
+:root {
+    // Avatar
+    --avatar-gap-bg: var(--background-secondary);
+    --avatar-height: 33px;
+    --avatar-width: 79px;
+
+    // Status Picker
+    --menu-bg: var(--background-tertiary);
+    --custom-status-bg: var(--background-secondary-alt);
+    --border-radius: 3px;
+
+    // Statuses
+	--online: #43b581;
+    --online-hover: rgb(67, 182, 131, 0.5);
+	--idle: #faa61a;
+    --idle-hover: rgb(250, 166, 26, 0.5);
+	--dnd: #f04747;
+    --dnd-hover: rgb(240, 71, 71, 0.5);
+	--invisible: #747f8d;
+    --invisible-hover: rgb(116, 127, 141, 0.5);
+}
