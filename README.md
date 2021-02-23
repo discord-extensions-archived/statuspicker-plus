@@ -14,7 +14,7 @@ Makes Discord's status picker look spicier. Credit to [Tropical](https://github.
 # Installation
 For **[Powercord](http://powercord.dev/)** or **[Vizality](https://vizality.com/)** installation, go to **Themes -> Open a CMD / Powershell / Terminal / Gitbash** in the folder, and enter the following:
 ```
-git clone https://github.com/LuckFire/statuspicker-plus
+git clone https://github.com/Discord-Theme-Addons/statuspicker-plus
 ```
 
 **For [BetterDiscord](https://betterdiscord.net/):**
