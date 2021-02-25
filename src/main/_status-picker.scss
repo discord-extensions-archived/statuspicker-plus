@@ -15,9 +15,7 @@
         height: 172px;
         animation: StatusPicker 350ms ease forwards;
 
-        .status-1fhblQ, .separator-2I32lJ, .description-2L932D {
-            display: none;
-        }
+
 
         .scroller-3BxosC {
             position: absolute;
@@ -38,6 +36,10 @@
                 padding: 0;
                 margin: 0 10px;
                 width: 25px;
+
+                .status-1fhblQ, .separator-2I32lJ, .description-2L932D {
+                    display: none;
+                }
 
                 &#status-picker-online {
                     --status-color: var(--online);
