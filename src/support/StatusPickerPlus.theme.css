@@ -1,6 +1,6 @@
 /**
     * @name Status Picker Plus
-    * @version 1.0.1
+    * @version 1.0.2
     * @description Makes Discord's status picker look spicier.
     * @author LuckFire#4800
     *
@@ -10,11 +10,12 @@
 
 :root {
     --avatar-gap-bg: var(--background-secondary);
-    --avatar-height: 33px;
-    --avatar-width: 79px;
+    --placeholder-avatar: url("/assets/6debd47ed13483642cf09e832ed0bc1b.png");
+  
     --menu-bg: var(--background-tertiary);
     --custom-status-bg: var(--background-secondary-alt);
     --border-radius: 3px;
+    
     --online: #43b581;
     --online-hover: rgb(67, 182, 131, 0.5);
     --idle: #faa61a;
@@ -45,6 +46,7 @@
         opacity: 1;
     }
 }
+
 #app-mount .scale-3iLZhb {
     opacity: 1;
     transform: none;
@@ -53,7 +55,7 @@
     background: radial-gradient(circle at center 45px, var(--avatar-gap-bg) 34px, var(--menu-bg) 0);
     border-radius: var(--border-radius);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 3px;
+    margin-bottom: 19px;
     width: 224px;
     height: 172px;
     animation: StatusPicker 350ms ease forwards;
@@ -75,7 +77,7 @@
     background-color: transparent;
     padding: 0;
     margin: 0 10px;
-    width: 25px;
+    width: 27px;
 }
 #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status) .status-1fhblQ, #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status) .separator-2I32lJ, #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status) .description-2L932D {
     display: none;
@@ -84,6 +86,7 @@
     --status-color: var(--online);
     --status-color-hover: var(--online-hover);
     margin-left: -8px;
+    width: 20px;
 }
 #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status)#status-picker-idle {
     --status-color: var(--idle);
@@ -96,6 +99,11 @@
 #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status)#status-picker-invisible {
     --status-color: var(--invisible);
     --status-color-hover: var(--invisible-hover);
+}
+#app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status)#status-picker-game-activity {
+    position: fixed;
+    margin-top: -90px;
+    margin-left: -30px;
 }
 #app-mount #status-picker .scroller-3BxosC .item-1tOPte:not(#status-picker-custom-status) .status-1AY8sU {
     background-color: var(--status-color) !important;
@@ -127,17 +135,19 @@
 #app-mount .container-3baos1 {
     position: relative;
 }
-#app-mount .container-3baos1 .avatarWrapper-2yR4wp[aria-expanded=true] {
-    height: var(--avatar-height);
-    width: var(--avatar-width);
+#app-mount .container-3baos1 .avatarWrapper-2yR4wp[aria-expanded=true] + .nameTag-3uD-yy {
+    margin-left: 32px;
 }
-#app-mount .container-3baos1 .avatarWrapper-2yR4wp[aria-expanded=true]::after {
+#app-mount .container-3baos1 .avatarWrapper-2yR4wp[aria-expanded=true] + .nameTag-3uD-yy::before {
     content: "";
-    cursor: pointer;
     position: absolute;
-    background: var(--background-tertiary) url("https://cdn.discordapp.com/attachments/794019383172399135/813493336270569543/Component_1.svg") center/115% no-repeat;
+    pointer-events: none;
+    background: var(--background-tertiary) var(--placeholder-avatar) center/100% no-repeat;
     border-radius: 25px;
-    padding: 16px;
+    height: 32px;
+    width: 32px;
+    margin-top: -1px;
+    left: 8px;
 }
 #app-mount .container-3baos1 .avatarWrapper-2yR4wp[aria-expanded=true] .avatar-SmRMf2 {
     z-index: 1003;

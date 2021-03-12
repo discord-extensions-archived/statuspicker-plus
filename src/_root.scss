@@ -1,8 +1,7 @@
 :root {
     // Avatar
     --avatar-gap-bg: var(--background-secondary);
-    --avatar-height: 33px;
-    --avatar-width: 79px;
+    --placeholder-avatar: url("/assets/6debd47ed13483642cf09e832ed0bc1b.png");
 
     // Status Picker
     --menu-bg: var(--background-tertiary);
@@ -10,12 +9,12 @@
     --border-radius: 3px;
 
     // Statuses
-	--online: #43b581;
+    --online: #43b581;
     --online-hover: rgb(67, 182, 131, 0.5);
-	--idle: #faa61a;
+    --idle: #faa61a;
     --idle-hover: rgb(250, 166, 26, 0.5);
-	--dnd: #f04747;
+    --dnd: #f04747;
     --dnd-hover: rgb(240, 71, 71, 0.5);
-	--invisible: #747f8d;
+    --invisible: #747f8d;
     --invisible-hover: rgb(116, 127, 141, 0.5);
 }

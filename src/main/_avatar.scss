@@ -3,16 +3,20 @@
         position: relative;
 
         .avatarWrapper-2yR4wp[aria-expanded="true"] {
-            height: var(--avatar-height);
-            width: var(--avatar-width);
+            + .nameTag-3uD-yy {
+                margin-left: 32px;
 
-            &::after {
-                content: "";
-                cursor: pointer;
-                position: absolute;
-                background: var(--background-tertiary)  url('https://cdn.discordapp.com/attachments/794019383172399135/813493336270569543/Component_1.svg') center/115% no-repeat;
-                border-radius: 25px;
-                padding: 16px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    pointer-events: none;
+                    background: var(--background-tertiary) var(--placeholder-avatar) center/100% no-repeat;
+                    border-radius: 25px;
+                    height: 32px;
+                    width: 32px;
+                    margin-top: -1px;
+                    left: 8px;
+                }
             }
 
             .avatar-SmRMf2 {
