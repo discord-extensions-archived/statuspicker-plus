@@ -1,3 +1,9 @@
+# v1.0.4
+Some general changes.
+- Fix for the user icon getting rendered behind the popout. This closes [issue #1](https://github.com/Discord-Theme-Addons/statuspicker-plus/issues/1). This fix is *very* scuffed so if anyone has a better way, please make a pull request!
+- Switched the BD and Stylus version to an `@import` of the source instead.
+- Updated README assets & fixed BD link.
+
 # v1.0.3
 Some general enhancements that should make this a bit better.
 - Some changes to prevent this thing from completely breaking if a plugin / Discord themselves adds a new staus to the menu. It'll still break, but not completely.

@@ -1,7 +1,7 @@
 {
     "name": "Status Picker+",
     "description": "Makes Discord's status picker look spicier.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "LuckFire#48000",
     "theme": "index.scss",
     "consent": "true",

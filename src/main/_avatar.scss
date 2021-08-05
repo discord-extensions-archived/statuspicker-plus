@@ -20,14 +20,14 @@
             }
 
             .avatar-SmRMf2 {
-                z-index: 1003;
                 position: absolute;
                 pointer-events: none;
                 height: 60px !important;
                 width: 60px !important;
-                bottom: 156px;
+                bottom: 151px;
                 left: 50%;
-                animation: StatusPickerAvatar 350ms ease forwards; 
+                border: 5px solid var(--avatar-gap-bg);
+                animation: StatusPickerAvatar 350ms ease forwards;
 
                 foreignObject {
                     mask: none;

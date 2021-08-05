@@ -7,7 +7,8 @@
 
     // Main Code
     #status-picker {
-        background: radial-gradient(circle at center 45px, var(--avatar-gap-bg) 34px, var(--menu-bg) 0);
+        z-index: 0;
+        background: radial-gradient(circle at center 45px, transparent 34px, var(--menu-bg) 0);
         border-radius: var(--border-radius);
         box-shadow: 0 0 8px var(--box-shadow-color);
         margin-bottom: 19px;
